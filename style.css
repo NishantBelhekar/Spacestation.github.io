@@ -1,10 +1,12 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
     box-sizing:border-box;
 
+
 }
+
 
 nav{
     position: fixed;
@@ -26,10 +28,15 @@ nav{
     align-items: center;
     font-size: 2rem;
     border: 2px solid black;
+    
 }
 
+.Ab{
+    font-family: 'Montserrat', sans-serif;
+}
 h1{
     margin: 0 30px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .navigation{
@@ -98,7 +105,12 @@ nav .icon-burger .line{
     /* align-items: center; */
     background: url(Space\ station.jpg);
     background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    overflow: hidden;
+    background-size: 100% 100%;
 }
+
 
 
 .Info{
@@ -109,33 +121,477 @@ nav .icon-burger .line{
     flex-direction: column;
     height: 200px;
     width: 720px;
-    margin: 200px 500px;
+    margin: 120px auto;
     
 }
 
 .heading{
-    font-size: 48px;
-    font-weight: 900;
+    font-size: 5rem;
+    font-weight: bold;
     color: white;
+    display: flex;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 3px 3px 12px black;
+    
 }
 
 .para1{
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
-    color: white;
+    color: whitesmoke;
     text-align:center;
+    text-shadow: 2px 3px black;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+
 }
 
 .para2{
     padding :100px;
 }
 
-.Shop{
+.page2{
     position: relative;
     width: 100%;
+    min-height: 100vh;
     display: flex;
-    justify-content: space-between;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: space-around;
+    background: url('space.jpg');
+    background-size: cover;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+
+    
+}
+
+.About{
+     height: auto;
+    width: 700px; 
+     /* border: 2px solid black;  */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+    overflow: hidden;
+}
+
+.Img-A{
+    height: 500px;
+    width: 500px;
+    border: 2px solid white;
+}
+
+.about-img{
+    height: 500px;
+    width: 500px;
+}
+
+.sec1{
+    font-size: 2em;
+    font-weight: bold;
+    margin: 40px 0 122px 0;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sec2{
+    margin: -32px 0 0 0;
+    padding: 2px 25px;
+    text-align: center;
+    color: white;
+    word-spacing: 5px;
+    text-shadow: 3px 2px black;
+    height: auto;
+    width: auto;
+    font-size: 1em;
+}
+
+.sec2 p{
+    font-size: 24px;
+}
+
+.page3{
+    height: 110vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    overflow: hidden;  
+    flex-direction: column;
+    /* border: 2px solid black; */
+    justify-content: center;
+    background: url('space.jpg');
+    background-size: cover;
+
+}
+.Shophead{
+    font-size:48px;
+    margin: 25px 0 25px 0;
+    text-decoration: underline;
+    color:whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 3px 3px 6px black;
+}
+.shop-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
+    justify-content:space-around;
+    height: 500px;
+    width: 80%;
+    margin: 30px 10px;  
+  overflow: auto;
+  white-space: nowrap;
+  align-items:center;
+  /* overflow: visible; */
+  box-shadow: inset 3px 3px 10px grey;
+  border-radius: 25px;
+  background-color: yellow; 
+  
+}
+.scrollmenu{
+    overflow: auto;
+  white-space: nowrap;
+  
+}
+.box{
+    height: 350px;
+    width: 265px;
+    margin: 65px 40px;
+    display: inline-block;
+    text-align:center;
+    border-radius: 25px;
+    position: relative;
+    box-shadow: 3px 3px 6px grey;
+}
+
+
+#box1{
+    background: url(shirt.png) no-repeat;
+    background-size: 265px 350px;
+    transition: transform .2s;
+    
+}
+
+#box1:hover{
+    -ms-transform:scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+
+    
+    
+} 
+#box2{
+    background: url(shirt2.jpg) no-repeat;
+    background-size: 265px 350px;
+    transition: transform .2s;
+}
+
+#box2:hover{
+    -ms-transform:scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+#box3{
+    background: url(shoes.jpg)  no-repeat;
+    background-size: 265px 350px;
+    transition: transform .2s;
+}
+
+#box3:hover{
+    -ms-transform:scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+#box4{
+    background: url(vr\ goggles.jpg)  no-repeat;
+    background-size: 265px 350px;
+    transition: transform .2s;
+}
+
+#box4:hover{
+    -ms-transform:scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+#box5{
+    background: url(bag.jpg) no-repeat;
+    background-size: 265px 350px;
+    transition: transform .2s;
+}
+
+#box5:hover{
+    -ms-transform:scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+#box6{
+    background: url(book.jpg) no-repeat;
+    background-size: 265px 350px;
+    transition: transform .2s;
+}
+
+#box6:hover{
+    -ms-transform:scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+#box7{
+    background: url(spacefood.jpg) no-repeat;
+    background-size: 265px 350px;
+    transition: transform .2s;
+}
+
+#box7:hover{
+    -ms-transform:scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+#box8{
+    background: url(book1.jpg) no-repeat;
+    background-size: 265px 350px;
+    transition: transform .2s;
+}
+
+#box8:hover{
+    -ms-transform:scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);    
+}
+
+.detail{
+    display: flex;
+    opacity: 0%;
+    height: 350px;
+    width: 265px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.detail:hover{
+    opacity: 100%;
+    color:white;
+    background-color:rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px  black;
+}
+
+.page4{
+    height: 140vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* table{
+    /* border: 3px solid black; */
+
+.receipt{
+    height: 100%;
+    width: 80%;
+    border: 2px solid black;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    
+    
+}
+
+.invoice{
+    /* border: 2px solid black; */
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin-top: 100px;
+}
+.invoice h1{
+    height: 74px;
+}
+.main-addr{
+    /* border: 2px solid black; */
+    height: 160px;
+    border: none;
+    outline: none;
+    margin:5px 50px;
+    width: 250px;
+}
+
+#txtbox1{
+    margin: 50px 50px ;
+}
+
+.sender{
+    width: 250px;
+}
+.txtbox{
+    margin: 50px 40px 0px 0px;
+    border:2px solid grey;
+    width: 100%;
+    height: 150px;
+    padding:12px 20px;
+    border-radius: 4px;
+    background-color: whitesmoke;
+    font-size:15px;
+    resize:none;
+}
+
+.invoice-box{
+    display: block;
+    /* border: 2px solid black; */
+    width: 250px;
+    
+    margin-right: 100px;
+
+}
+
+.t1{
+    margin: -25px 0px 25px 0px;
+}
+
+.t2{
+    /* border: 2px solid black; */
+    height: 150px;
+    width: 90%;
+    text-align: center;
+    margin:auto;
+    
+}
+th,td{
+    border: none;
+}
+
+.t3{
+    float: right;
+    margin-top: 20px;
+    margin-right: 100px;
+}
+
+input[type=text]{
+    width: 80%;
+    margin: 5px 25px;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 3px solid grey;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=number]{
+    width: 80%;
+    padding: 12px;
+    margin: 5px 25px ;
+    border: 3px solid grey;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type = date]{
+    width: 80%;
+    padding: 12px;
+    margin: 5px 25px ;
+    border: 3px solid grey;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+
+
+.contact{
+    height: 40vh;
+    width: 100%;
+}
+.contact-us{
+    background-color: black;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+}
+.content{
+    color: white;
+    text-align: justify;
+    
+}
+.content h1{
+    font-size: 32px;
+
+}
+
+.content p{
+    text-align: center;
+}
+
+.end{
+    display: flex;
+    /* border: 2px solid greenyellow; */
+    margin-top: 25px;
+    margin-bottom: 0;
+    justify-content: space-around;
+    width: 100%;
+    flex-direction: 40%;
+    flex-wrap: wrap;
+
+}
+.end h1{
+    /* border: 2px solid white; */
+    height: 50%;
+    width: 50%;
+}
+.icon-png{
+    width: 60%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+
+/* border: 2px solid blue; */
+}
+.end h1{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+.facebook-logo{
+    height: 60px;
+    width: 70px;
+    margin: 0;
+}
+.insta-logo{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 0;
+}
+.map-logo{
+    height: 50px;
+    width: 50px;
+    margin: 0;
+}
+.twitter-logo{
+    height: 50px;
+    width: 50px;
+    margin: 0;
 }
 
 @media screen and (max-width: 768px){
@@ -175,7 +631,7 @@ nav .icon-burger .line{
     nav .icon-burger .line{
         transition: all .3s ease-in-out;
     }
-    nav :checked ~.icon-burger .line:nth-child(1){
+    /* nav :checked ~.icon-burger .line:nth-child(1){
         transform: translateY(10px) rotate(268deg);
     }
     nav :checked ~.icon-burger .line:nth-child(3){
@@ -183,7 +639,7 @@ nav .icon-burger .line{
     }
     nav :checked ~.icon-burger .line:nth-child(3){
         opacity: 0;
-    }   
+    }    */
 }
 @media (max-width: 300px){
     .logo h1{

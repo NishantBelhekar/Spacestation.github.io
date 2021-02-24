@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Station</title>
-    <link rel = "stylesheet" href = "style.css">
-    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
     <div class="container">
         <header>
             <nav>
                 <input type="checkbox" id="nav-toggle">
                 <div class="logo">
-                    <h1>Spacestation</h1>
+                    <h1>Vyomstation</h1>
                 </div>
                 <div class="navigation">
-                    <a href="#">Home</a>
-                    <a href="#">Shop</a>
-                    <a href="#">About us</a>
-                    <a href="#">Features</a>
+                    <a href="#page1" >Home</a>
+                    <a href="#page3" >Shop</a>
+                    <a href="#page4">Features</a>
+                    <a href="#page2">About us</a>
                 </div>
                 <label for="nav-toggle" class="icon-burger">
                     <div class="line"></div>
@@ -29,21 +33,160 @@
                 </label>
             </nav>
         </header>
-        <section class="page1" id ="page">
-            <div class = "Info">
-            <h1 class="heading">Vyom Space Station</h1>
-            <p class="para1">Vyom Space Station is space based theme park which is open for all. Situated near Mumbai.</p>
-        </div>
-        </section>
-        <section class="page2">
-            <div class="Shop">
-                <div class="container1">
-                <h1><span>About us</span></h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis recusandae nobis dignissimos cupiditate corporis explicabo sapiente architecto assumenda, nulla hic. Voluptatum voluptates minus magni expedita consequatur. Sunt rerum necessitatibus dicta suscipit impedit ab? Ex laboriosam provident nam eos! Tempore, rem natus nobis debitis sequi incidunt? Suscipit voluptate soluta excepturi odio animi consectetur ut! Quam, pariatur culpa ea distinctio repellat ipsa minima ullam eaque optio, harum quis.</p>
-               </div> 
+        <section class="page1" id="page1">
+            <div class="Info">
+                <h1 class="heading">Vyom Space Station</h1>
+                <p class="para1">Vyom Space Station is space based theme park which is open for all. Situated near
+                    Mumbai.</p>
             </div>
-            
         </section>
-    
+       
+        
+        <section class="page3" id ="page3">
+            <h1 class="Shophead">Shop</h1>
+            <div class="shop-container">
+                <div class="scrollmenu">
+                    <div class="box" id="box1"><span class="detail" id="d1">
+                            <h1>T-shirt</h1>
+                            <p>SpaceStation Tshirt <br>&#8377;599</p>
+                        </span></div>
+                    <div class="box" id="box2"><span class="detail" id="d2">
+                            <h1>T-shirt</h1>
+                            <p>SpaceStation Tshirt <br>&#8377;999</p>
+                        </span></div>
+                    <div class="box" id="box3"><span class="detail" id="d3">
+                            <h1>Shooes</h1>
+                            <p>Smooth lite Shooes<br>&#8377;2999</p>
+                        </span></div>
+                    <div class="box" id="box4"><span class="detail" id="d4">
+                            <h1>VR Goggles</h1>
+                            <p>Lite VR Goggles<br>&#8377;5999</p>
+                        </span></div>
+                    <div class="box" id="box5"><span class="detail" id="d5">
+                            <h1>Bag</h1>
+                            <p>Space theme bag<br>&#8377;999</p>
+                        </span></div>
+                    <div class="box" id="box6"><span class="detail" id="d6">
+                            <h1>Book</h1>
+                            <p>Informative Space Book<br>&#8377;1999</p>
+                        </span></div>
+                    <div class="box" id="box7"><span class="detail" id="d7">
+                            <h1>Space Food</h1>
+                            <p>Space Food to experience the Space<br>&#8377;1999</p>
+                        </span></div>
+                    <div class="box" id="box8"><span class="detail" id="d8">
+                            <h1>Book</h1>
+                            <p>Space related Book<br>&#8377;2999</p>
+                        </span></div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="page4" id = "page4">
+            <div class="receipt">
+                    <h1 class="invoice">Reciept Generator</h1>
+                    <div class="main-addr">
+                        <textarea rows="4" cols="25" class="txtbox" placeholder="C-2,201,    Arihant Towers, BKC, Mumbai."></textarea>
+                    </div>
+                    <div class="sender">
+                        <textarea class="txtbox" id="txtbox1"rows="4" cols="25" placeholder="Sender's Address"></textarea>
+                    </div>
+                    <div class="invoice-box">
+                        <table class="t1">
+                        <tr>
+                            <td>Invoice</td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Date</td>
+                            <td><input type="date"></td>
+                        </tr>
+                        <tr>
+                            <td>Amount</td>
+                            <td><input type="number"></td>
+                        </tr>
+                        </table>
+                    </div>
+                    <div class="contanier-box">
+                        <table class="t2">
+                        <tr>
+                           <th>Item</th>
+                           <th>Description</th>
+                           <th>Rate</th>
+                           <th>Quantity</th>
+                           <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                        </tr>
+                        </table>
+                    </div>
+                    <div class="total">
+                        <table class="t3">
+                        <tr>
+                            <td>Total</td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Amount Paid</td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Balance Due</td>
+                            <td><input type="number"></td>
+                        </tr> 
+                    </div>
+                </table>
+            </div>
+        </section>
+        <section class="page2" id ="page2">
+
+            <div class="About">
+                <div class="sec1">
+                    <h1 class="Ab"><span>About us</span></h1>
+                </div>
+                <div class="sec2">
+                    <p>Vyom Space Station is a Space Station theme center/park. Located in Mumbai,Maharashtra, India. The motive of this theme park is to aware people about space, give information on it in a easy and entartaining way. Vyom Space Station was established in 2012. It is founded by ISRO Ex-chairman VK Naidu and Amar Singh(Businessman). We had collaborated with famous institution like ISRO, NASA, JAXA, ROSCOMOS, ESA for Astronaut Training and Research. In our park we have big telescope for Space Hunt, Anti-Gravity Space, Moon Surface Walk Room, Mars Surface Walk Room  and many more. </p>
+                </div>
+            </div>
+            <div class="Img-A">
+                <img src="ss1.jpg" class="about-img">
+            </div>
+        </section>
+        <section class="contact">
+            <div class="contact-us">
+                <div class="content">
+                    <h1>Vyom Space Station</h1>
+                    <p>Mumbai,Worli-400018<br>Dist.Mumbai,Maharashtra,India<br><span class="tel-icon">&#128241;</span>0000-0000-00/XXXX-XXXX-XX<br>	&#128231;vyom@hurry.com</p>
+                    </div>
+                    <div class="end">
+                        <h1>Follow us on:</h1>
+                        <div class="icon-png"><i ><img class="facebook-logo" src="Facebook-logo.png" alt="Facebook"></i>
+                        <i><img class="insta-logo" src="download.jpg" alt="Insta"></i>
+                        <i><img class="map-logo" src="map.png" alt="Map"></i>
+                        <i><img class="twitter-logo" src="twitter-logo-1-1.png" alt="Twitter"></i></div>
+                    </div>
+            </div>
+        
+
 </body>
+
 </html>
